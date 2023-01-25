@@ -27,6 +27,14 @@ const Usuário = db.define('usuarios-salgadinho', {
     dataDeEmissão: {
         type: Sequelize.DATE,
         allowNull: false
+    },
+    ADM: {
+        type: Sequelize.BOOLEAN,
+        allowNull: true
+    },
+    Permissao: {
+        type: Sequelize.JSON,
+        allowNull: true
     }
 }, {
     paranoid: true,
